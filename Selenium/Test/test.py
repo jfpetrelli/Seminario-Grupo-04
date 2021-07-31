@@ -20,7 +20,7 @@ class PythonOrgSearch(unittest.TestCase):
         #Checks if the word "Python" is in title
         assert main_page.is_title_matches(), "python.org title doesn't match."
         #Sets the text of search textbox to "pycon"
-        main_page.search_text_element = "asdc"
+        main_page.search_text_element = "pycon"
         main_page.click_go_button()
         search_results_page = page.SearchResultsPage(self.driver)
         #Verifies that the results page is not empty
